@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <p id="joke" style="color: green;"></p>
+        <div class="btns">
+            <button id="btn" onclick="runon()">Get Random Joke</button>
+            <select id="menu" onchange="displaySelectedValue()">
+                <option value="any">any</option>
+                <option value="religious">religious</option>
+                <option value="political">political</option>
+                <option value="racist">racist</option>
+                <option value="sexist">sexist</option>
+                <option value="explicit">explicit</option>
+              </select>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
