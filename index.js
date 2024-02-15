@@ -6,7 +6,9 @@ let  apiEndpoint = ``;
 function runon (){
     var dropdown = document.getElementById("menu");
     flag = dropdown.options[dropdown.selectedIndex].value;
-    apiEndpoint = `https://v2.jokeapi.dev/joke/Any?category=${flag}&type=single`;
+    apiEndpoint = `https://v2.jokeapi.dev/joke/Any?category=${flag}?lang=hi&type=single`;
+    // apiEndpoint = `https://v2.jokeapi.dev/joke/${flag}?lang=hi&type=single`;
+
     jokeContainer.classList.remove("fade");
     fetch(apiEndpoint)
     .then(response => {
