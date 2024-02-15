@@ -6,25 +6,35 @@
     <title>Random Joke Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <p id="joke" ></p>
+    <link rel="stylesheet" href="mode.css">
+</head> 
+<body id="body">
+    
+    <div class="mode">
+        <label class="switch">
+            <input id="toggle" type="checkbox">
+            <span class="slider" id="slider"></span>
+        </label>
+    </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <p id="joke"></p>
         <div class="btns">
             <button id="btn" onclick="runon()">Get Random Joke</button>
             <select id="menu" onchange="displaySelectedValue()">
-                <option value="any">any</option>
-                <option value="religious">religious</option>
-                <option value="political">political</option>
-                <option value="racist">racist</option>
-                <option value="sexist">sexist</option>
-                <option value="explicit">explicit</option>
-              </select>
+                <option value="any">Random</option>
+                <option value="religious">Religious</option>
+                <option value="political">Political</option>
+                <option value="racist">Racist</option>
+                <option value="sexist">Sexist</option>
+                <option value="explicit">Explicit</option>
+            </select>
         </div>
+       
     </div>
 
     <script src="index.js"></script>
+    <script src="mode.js"></script>
 </body>
 
 </html>
